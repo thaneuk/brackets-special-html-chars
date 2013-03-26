@@ -30,7 +30,8 @@
 define(function (require, exports, module) {
     'use strict';
 
-    // Menu: Edit - Insert Special HTML Character
+    /* Menu: Edit - Insert Special HTML Character
+    */
 
     var
         CommandManager = brackets.getModule('command/CommandManager'),
@@ -38,11 +39,6 @@ define(function (require, exports, module) {
         EditorManager = brackets.getModule('editor/EditorManager'),
         ExtensionUtils = brackets.getModule('utils/ExtensionUtils'),
         DocumentManager = brackets.getModule('document/DocumentManager');
-    //var ProjectManager = brackets.getModule('project/ProjectManager');
-    //var FileUtils = brackets.getModule('file/FileUtils');    
-    //var 
-    //var NativeApp = brackets.getModule('utils/NativeApp');
-    //var Commands = brackets.getModule('command/Commands');
 
     var
         COMMAND_ID  = 'specialhtmlchar.insert',
@@ -88,7 +84,8 @@ define(function (require, exports, module) {
         iCharsLen = specialChars.length,
         $specialCharsDialog = $('<div>', { 'class': 'specialHTMLChar' });
     
-    // Construction of popup dialog
+    /* Construction of popup dialog
+    */
     $specialCharsDialog.append(
         function () {
             var $ULElement = $('<ul>');
@@ -128,7 +125,6 @@ define(function (require, exports, module) {
             showing = true;
         }
     }
-
 
     CommandManager.register(MENU_NAME, COMMAND_ID, showDialog);
     
