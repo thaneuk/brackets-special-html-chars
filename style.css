@@ -1,0 +1,36 @@
+.specialHTMLChar {
+    background-color: white;
+    padding: 8px;
+    left: 300px;
+    top: 300px;
+    border: 1px solid #C8C8C8;
+    border-radius: 3px;
+    position: absolute;
+     z-index: 5000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
+}
+.specialHTMLChar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.specialHTMLChar li {
+    line-height: 18px;
+    padding: 0;
+}
+.specialHTMLChar a {
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    padding: 2px 4px 2px 4px;
+    cursor: default;
+}
+.specialHTMLChar a:hover {
+    background-color: #E0F0FA;
+}
