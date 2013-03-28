@@ -40,7 +40,6 @@ define(function (require, exports, module) {
         specialChars = JSON.parse(SpecialChars),
         COMMAND_ID = 'specialhtmlchar.insert',
         MENU_NAME = 'Special HTML Character',
-        showing = false,
         iChars,
         iCharsLen = specialChars.quickLinks.length,
         menu,
@@ -63,33 +62,22 @@ define(function (require, exports, module) {
             }
             return $ULElement;
         }
-    )/*.append(
-        $('<div>', { 'class': 'divider' }),
-        $('<a>', { 'href': '#', 'class': 'more', 'text': 'More...'})
-    )*/.hide();
+    ).hide();
 
     function showDialog() {
-        if (showing) {
+        $specialCharsDialog.css({ 'left': event.pageX - 16, 'top': event.pageY - 16 }).show().appendTo($('body'));
+        $specialCharsDialog.on('mouseleave', function () {
             $specialCharsDialog.remove();
-            showing = false;
-        } else {
-            $specialCharsDialog.css({ 'left': event.pageX - 16, 'top': event.pageY - 16 }).show().appendTo($('body'));
-            $specialCharsDialog.on('mouseleave', function () {
-                $specialCharsDialog.remove();
-                showing = false;
-            }).find('ul').find('a').on('click', function (e) {
-                var
-                    cCode = $(this).attr('htmlcode'),
-                    doc = DocumentManager.getCurrentDocument(),
-                    editor = EditorManager.getCurrentFullEditor(),
-                    pos = editor.getCursorPos();
-                doc.replaceRange(cCode, pos);
-                $specialCharsDialog.remove();
-                showing = false;
-                editor.focus();
-            });
-            showing = true;
-        }
+        }).find('ul').find('a').on('click', function (e) {
+            var
+                cCode = $(this).attr('htmlcode'),
+                doc = DocumentManager.getCurrentDocument(),
+                editor = EditorManager.getCurrentFullEditor(),
+                pos = editor.getCursorPos();
+            doc.replaceRange(cCode, pos);
+            $specialCharsDialog.remove();
+            editor.focus();
+        });
     }
 
     CommandManager.register(MENU_NAME, COMMAND_ID, showDialog);
