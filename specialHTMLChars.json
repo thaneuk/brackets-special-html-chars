@@ -1,0 +1,40 @@
+{
+    "quickLinks": [
+        {
+            "name": "Non-breaking Space",
+            "code": "&nbsp;"
+        }, {
+            "name": "Copyright",
+            "code": "&copy;"
+        }, {
+            "name": "Registered",
+            "code": "&reg;"
+        }, {
+            "name": "Trademark",
+            "code": "&#8482;"
+        }, {
+            "name": "Pound",
+            "code": "&pound;"
+        }, {
+            "name": "Euro",
+            "code": "&#8364;"
+        }, {
+            "name": "Yen",
+            "code": "&yen;"
+        }, {
+            "name": "Left Quote",
+            "code": "&#8220;"
+        }, {
+            "name": "Right Quote",
+            "code": "&#8221;"
+        }, {
+            "name": "Em-Dash",
+            "code": "&#8212;"
+        }, {
+            "name": "En-Dash",
+            "code": "&#8211;"
+        }
+    ],
+    "full": [
+    ]
+}
