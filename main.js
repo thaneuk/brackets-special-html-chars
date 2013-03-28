@@ -22,7 +22,7 @@
  */
 
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
-/*global define, $, brackets */
+/*global define, $, brackets, event */
 
 /* Special HTML Characters Extension 
     to insert special HTML character codes
@@ -30,94 +30,60 @@
 define(function (require, exports, module) {
     'use strict';
 
-    /* Menu: Edit - Insert Special HTML Character
-    */
-
     var
         CommandManager = brackets.getModule('command/CommandManager'),
         Menus = brackets.getModule('command/Menus'),
         EditorManager = brackets.getModule('editor/EditorManager'),
         ExtensionUtils = brackets.getModule('utils/ExtensionUtils'),
-        DocumentManager = brackets.getModule('document/DocumentManager');
-
-    var
-        COMMAND_ID  = 'specialhtmlchar.insert',
-        MENU_NAME   = 'Special HTML Character',
-        specialChars = [
-            {
-                'name': 'Non-breaking Space',
-                'code': '&nbsp;'
-            }, {
-                'name': 'Copyright',
-                'code': '&copy;'
-            }, {
-                'name': 'Registered',
-                'code': '&reg;'
-            }, {
-                'name': 'Trademark',
-                'code': '&#8482;'
-            }, {
-                'name': 'Pound',
-                'code': '&pound;'
-            }, {
-                'name': 'Euro',
-                'code': '&#8364;'
-            }, {
-                'name': 'Yen',
-                'code': '&yen;'
-            }, {
-                'name': 'Left Quote',
-                'code': '&#8220;'
-            }, {
-                'name': 'Right Quote',
-                'code': '&#8221;'
-            }, {
-                'name': 'Em-Dash',
-                'code': '&#8212;'
-            }, {
-                'name': 'En-Dash',
-                'code': '&#8211;'
-            }
-        ],
+        DocumentManager = brackets.getModule('document/DocumentManager'),
+        SpecialChars = require('text!specialHTMLChars.json'),
+        specialChars = JSON.parse(SpecialChars),
+        COMMAND_ID = 'specialhtmlchar.insert',
+        MENU_NAME = 'Special HTML Character',
         showing = false,
         iChars,
-        iCharsLen = specialChars.length,
+        iCharsLen = specialChars.quickLinks.length,
+        menu,
         $specialCharsDialog = $('<div>', { 'class': 'specialHTMLChar' });
-    
-    /* Construction of popup dialog
-    */
+
+    ExtensionUtils.loadStyleSheet(module, 'style.css');
+
+    /* Construction of popup dialog */
     $specialCharsDialog.append(
         function () {
             var $ULElement = $('<ul>');
-            for ( iChars = 0; iChars < iCharsLen; iChars++ ) {
+            for (iChars = 0; iChars < iCharsLen; iChars++) {
                 $ULElement.append(
                     $('<li>').append(
-                        $('<a>', { 'href': '#', 'htmlcode': specialChars[ iChars ].code, 'text': specialChars[ iChars ].name })
+                        $('<a>', { 'href': '#', 'htmlcode': specialChars.quickLinks[iChars].code, 'text': specialChars.quickLinks[iChars].name }).prepend(
+                            $('<span>', { 'class': 'quickChar', 'html': specialChars.quickLinks[iChars].code })
+                        )
                     )
                 );
             }
             return $ULElement;
         }
-    );
-    
-    ExtensionUtils.loadStyleSheet(module, 'style.css');
-    
+    )/*.append(
+        $('<div>', { 'class': 'divider' }),
+        $('<a>', { 'href': '#', 'class': 'more', 'text': 'More...'})
+    )*/.hide();
+
     function showDialog() {
-        if ( showing ) {
+        if (showing) {
             $specialCharsDialog.remove();
             showing = false;
         } else {
-            $specialCharsDialog.css( { 'left': event.pageX - 8, 'top': event.pageY - 8 } ).show().appendTo( $( 'body' ) );
-            $specialCharsDialog.on( 'mouseleave', function () {
+            $specialCharsDialog.css({ 'left': event.pageX - 16, 'top': event.pageY - 16 }).show().appendTo($('body'));
+            $specialCharsDialog.on('mouseleave', function () {
                 $specialCharsDialog.remove();
                 showing = false;
-            }).find( 'a' ).on( 'click', function ( e ) {
+            }).find('ul').find('a').on('click', function (e) {
                 var
-                    cCode = $(this).attr( 'htmlcode' ),
+                    cCode = $(this).attr('htmlcode'),
                     doc = DocumentManager.getCurrentDocument(),
                     editor = EditorManager.getCurrentFullEditor(),
                     pos = editor.getCursorPos();
-                doc.replaceRange( cCode, pos );
+                doc.replaceRange(cCode, pos);
                 $specialCharsDialog.remove();
                 showing = false;
                 editor.focus();
@@ -128,8 +94,7 @@ define(function (require, exports, module) {
 
     CommandManager.register(MENU_NAME, COMMAND_ID, showDialog);
     
-    var
-        menu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);
+    menu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);
     menu.addMenuDivider();
     menu.addMenuItem(COMMAND_ID);
 
