@@ -22,7 +22,7 @@
  */
 
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
-/*global define, $, brackets, event */
+/*global define, $, brackets, event, showFullListDialog */
 
 /* Special HTML Characters Extension 
     to insert special HTML character codes
@@ -43,14 +43,16 @@ define(function (require, exports, module) {
         iChars,
         iCharsLen = specialChars.quickLinks.length,
         menu,
-        $specialCharsDialog = $('<div>', { 'class': 'specialHTMLChar' });
+        $specialCharsDialog = $('<div>', { 'class': 'specialHTMLChar' }),
+        $fullSpecialCharsDialog = $('<div>', { 'class': 'specialHTMLChar full' }),
+        dialogDimensions;
 
     ExtensionUtils.loadStyleSheet(module, 'style.css');
 
-    /* Construction of popup dialog */
+    /* Construction of popup dialog and events */
     $specialCharsDialog.append(
         function () {
-            var $ULElement = $('<ul>');
+            var $ULElement = $('<ul>', { 'class': 'quick' });
             for (iChars = 0; iChars < iCharsLen; iChars++) {
                 $ULElement.append(
                     $('<li>').append(
@@ -62,26 +64,84 @@ define(function (require, exports, module) {
             }
             return $ULElement;
         }
-    ).hide();
+    ).append(
+        $('<div>', { 'class': 'divider' }),
+        $('<a>', { 'href': '#', 'class': 'more', 'text': 'more...'}).on('click', function () {
+            showFullListDialog();
+            $specialCharsDialog.hide();
+        })
+    ).hide().appendTo('body').on('mouseleave', function () {
+        $specialCharsDialog.hide();
+    }).find('ul').find('a').on('click', function () {
+        var
+            cCode = $(this).attr('htmlcode'),
+            doc = DocumentManager.getCurrentDocument(),
+            editor = EditorManager.getCurrentFullEditor(),
+            pos = editor.getCursorPos();
+        doc.replaceRange(cCode, pos);
+        $specialCharsDialog.hide();
+        editor.focus();
+    });
+
+    iCharsLen = specialChars.full.length;
+    $fullSpecialCharsDialog.append(
+        function () {
+            var $ULElement = $('<ul>', { 'class': 'full' });
+            for (iChars = 0; iChars < iCharsLen; iChars++) {
+                $ULElement.append(
+                    $('<li>', { 'title': specialChars.full[iChars].title }).append(
+                        $('<a>', { 'href': '#', 'htmlcode': specialChars.full[iChars].code, 'html': specialChars.full[iChars].code })
+                    )
+                );
+            }
+            return $ULElement;
+        }
+    ).append(
+        $('<div>', { 'class': 'control' }).append(
+            $('<p>', { 'text': 'Click the character you wish to insert' }),
+            $('<input>', { 'type': 'text', 'class': 'codepreview', 'name': 'fullSpecialCharsDialogCodeDisplay', 'value': '' }),
+            $('<a>', { 'href': '#', 'class': 'btn', 'text': 'Cancel' }).on('click', function () {
+                $fullSpecialCharsDialog.hide();
+            })
+        )
+    ).hide().appendTo('body').find('ul').find('a').on('click', function () {
+        var
+            cCode = $(this).attr('htmlcode'),
+            doc = DocumentManager.getCurrentDocument(),
+            editor = EditorManager.getCurrentFullEditor(),
+            pos = editor.getCursorPos();
+        doc.replaceRange(cCode, pos);
+        $fullSpecialCharsDialog.hide();
+        editor.focus();
+    }).on('mouseenter', function () {
+        $('[name=fullSpecialCharsDialogCodeDisplay]').val($(this).attr('htmlcode'));
+    }).on('mouseleave', function () {
+        $('[name=fullSpecialCharsDialogCodeDisplay]').val('');
+    });
+
+    dialogDimensions = {
+        height: $specialCharsDialog.outerHeight(),
+        width: $specialCharsDialog.outerWidth(),
+        offset: 16
+    };
 
     function showDialog() {
-        $specialCharsDialog.css({ 'left': event.pageX - 16, 'top': event.pageY - 16 }).show().appendTo($('body'));
-        $specialCharsDialog.on('mouseleave', function () {
-            $specialCharsDialog.remove();
-        }).find('ul').find('a').on('click', function (e) {
-            var
-                cCode = $(this).attr('htmlcode'),
-                doc = DocumentManager.getCurrentDocument(),
-                editor = EditorManager.getCurrentFullEditor(),
-                pos = editor.getCursorPos();
-            doc.replaceRange(cCode, pos);
-            $specialCharsDialog.remove();
-            editor.focus();
-        });
+        $specialCharsDialog.css({
+            'left': ((event.pageX + dialogDimensions.offset) > (event.view.innerWidth - dialogDimensions.width)) ? (event.view.innerWidth - dialogDimensions.width) - 31 : event.pageX - dialogDimensions.offset,
+            'top': ((event.pageY + dialogDimensions.offset) > (event.view.innerHeight - dialogDimensions.height)) ? (event.view.innerHeight - dialogDimensions.height) - 68  : event.pageY - dialogDimensions.offset
+        }).show();
+    }
+
+    function showFullListDialog() {
+        $fullSpecialCharsDialog.css({
+            'margin-left': -(622 / 2),
+            'margin-top': -(520 / 2),
+            'width': 620
+        }).show();
     }
 
     CommandManager.register(MENU_NAME, COMMAND_ID, showDialog);
-    
+
     menu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);
     menu.addMenuDivider();
     menu.addMenuItem(COMMAND_ID);
