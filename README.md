@@ -6,3 +6,6 @@ A more option at the bottom of this menu brings up a dialog which has an extensi
 
 ## Link to Brackets
 https://github.com/adobe/brackets
+
+## Reference
+[W3 Character entity references in HTML 4](http://www.w3.org/TR/html4/sgml/entities.html)
