@@ -1,6 +1,8 @@
-Brackets Extension for insertion of Special HTML Characters
-===========================================================
+## [Brackets](https://github.com/adobe/brackets) Extension for insertion of Special HTML Characters
 
-Inline editing context menu has an additional option to bring up a menu of common Special HTML characters to insert of the cursors position.
+The Inline editing context menu will get an additional option to bring up a menu of common Special HTML characters to insert of the cursors position (e.g. Copyright, Trademark, Non-breaking space).
 
 A more option at the bottom of this menu brings up a dialog which has an extensive list of these characters for you to choose from.
+
+## Link to Brackets
+https://github.com/adobe/brackets
