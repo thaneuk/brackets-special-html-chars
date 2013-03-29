@@ -75,6 +75,13 @@
     background: whiteSmoke;
     border-top: 1px solid #ddd;
 }
+.specialHTMLChar .control p {
+    font-size: 16px;
+    line-height: 34px;
+    text-indent: 10px;
+    margin: 0;
+    float: left;
+}
 .specialHTMLChar .control .codepreview {
     font-weight: bold;
     text-align: center;
@@ -82,4 +89,3 @@
     width: 80px;
     margin: 4px;
 }
-
