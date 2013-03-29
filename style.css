@@ -1,12 +1,11 @@
 .specialHTMLChar {
     background-color: white;
-    left: 300px;
-    top: 300px;
+    left:50%;
+    top:50%;
+    position:fixed;
     border: 1px solid #C8C8C8;
-    border-radius: 3px;
+    border-radius: 6px;
     padding-top: 6px;
-    padding-bottom: 6px;
-    position: absolute;
      z-index: 5000;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -15,25 +14,43 @@
     -moz-box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
 }
-.specialHTMLChar ul {
+.specialHTMLChar .quick {
     list-style: none;
     padding: 0;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 6px 0px;
 }
-.specialHTMLChar li {
-    line-height: 18px;
+.specialHTMLChar .full {
+    list-style: none;
+    padding: 0px 6px 6px 6px;
+    margin: 0;
+    overflow: hidden;
+}
+.specialHTMLChar .full li {
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+    float: left;
+}
+.specialHTMLChar .quick li {
     padding: 2px 14px 2px 14px;
 }
-.specialHTMLChar a {
+.specialHTMLChar .quick a, .specialHTMLChar .more, .specialHTMLChar .full a {
     color: black;
     font-size: 13px;
+    line-height: 18px;
     text-decoration: none;
     display: block;
     padding: 0;
     cursor: default;
 }
+.specialHTMLChar .full a {
+    font-size: 1.2em;
+    line-height: 32px;
+}
 .specialHTMLChar .more {
     margin-top: 6px;
+    margin-bottom: 6px;
     padding: 2px 16px 2px 16px;
 }
 .specialHTMLChar .divider {
@@ -49,3 +66,20 @@
     float: left;
     display: block;
 }
+.specialHTMLChar .control {
+    text-align: right;
+    padding: 8px;
+    margin-top: 6px;
+    clear: both;
+    display: block;
+    background: whiteSmoke;
+    border-top: 1px solid #ddd;
+}
+.specialHTMLChar .control .codepreview {
+    font-weight: bold;
+    text-align: center;
+    margin: 4px;
+    width: 80px;
+    margin: 4px;
+}
+
