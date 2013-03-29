@@ -1,6 +1,5 @@
 {
-    "quickLinks": [
-        {
+    "quickLinks": [{
             "name": "Non-breaking Space",
             "code": "&nbsp;"
         }, {
@@ -35,6 +34,765 @@
             "code": "&#8211;"
         }
     ],
-    "full": [
+    "full": [{
+            "code": "&quot;",
+            "title": "quotation mark (= APL quote)"
+        }, {
+            "code": "&amp;",
+            "title": "ampersand"
+        }, {
+            "code": "&apos;",
+            "title": "apostrophe (= apostrophe-quote)"
+        }, {
+            "code": "&lt;",
+            "title": "less-than sign"
+        }, {
+            "code": "&gt;",
+            "title": "greater-than sign"
+        }, {
+            "code": "&nbsp;",
+            "title": "no-break space (= non-breaking space)"
+        }, {
+            "code": "&iexcl;",
+            "title": "inverted exclamation mark"
+        }, {
+            "code": "&cent;",
+            "title": "cent sign"
+        }, {
+            "code": "&pound;",
+            "title": "pound sign"
+        }, {
+            "code": "&curren;",
+            "title": "currency sign"
+        }, {
+            "code": "&yen;",
+            "title": "yen sign (= yuan sign)"
+        }, {
+            "code": "&brvbar;",
+            "title": "broken bar (= broken vertical bar)"
+        }, {
+            "code": "&sect;",
+            "title": "section sign"
+        }, {
+            "code": "&uml;",
+            "title": "diaeresis (= spacing diaeresis); see Germanic umlaut"
+        }, {
+            "code": "&copy;",
+            "title": "copyright symbol"
+        }, {
+            "code": "&ordf;",
+            "title": "feminine ordinal indicator"
+        }, {
+            "code": "&laquo;",
+            "title": "left-pointing double angle quotation mark (= left pointingguillemet)"
+        }, {
+            "code": "&not;",
+            "title": "not sign"
+        }, {
+            "code": "&shy;",
+            "title": "soft hyphen (= discretionary hyphen)"
+        }, {
+            "code": "&reg;",
+            "title": "registered sign ( = registered trademark symbol)"
+        }, {
+            "code": "&macr;",
+            "title": "macron (= spacing macron = overline = APL overbar)"
+        }, {
+            "code": "&deg;",
+            "title": "degree symbol"
+        }, {
+            "code": "&plusmn;",
+            "title": "plus-minus sign (= plus-or-minus sign)"
+        }, {
+            "code": "&sup2;",
+            "title": "superscript two (= superscript digit two = squared)"
+        }, {
+            "code": "&sup3;",
+            "title": "superscript three (= superscript digit three = cubed)"
+        }, {
+            "code": "&acute;",
+            "title": "acute accent (= spacing acute)"
+        }, {
+            "code": "&micro;",
+            "title": "micro sign"
+        }, {
+            "code": "&para;",
+            "title": "pilcrow sign ( = paragraph sign)"
+        }, {
+            "code": "&middot;",
+            "title": "middle dot (= Georgian comma = Greek middle dot)"
+        }, {
+            "code": "&cedil;",
+            "title": "cedilla (= spacing cedilla)"
+        }, {
+            "code": "&sup1;",
+            "title": "superscript one (= superscript digit one)"
+        }, {
+            "code": "&ordm;",
+            "title": "masculine ordinal indicator"
+        }, {
+            "code": "&raquo;",
+            "title": "right-pointing double angle quotation mark (= right pointing guillemet)"
+        }, {
+            "code": "&frac14;",
+            "title": "vulgar fraction one quarter (= fraction one quarter)"
+        }, {
+            "code": "&frac12;",
+            "title": "vulgar fraction one half (= fraction one half)"
+        }, {
+            "code": "&frac34;",
+            "title": "vulgar fraction three quarters (= fraction three quarters)"
+        }, {
+            "code": "&iquest;",
+            "title": "inverted question mark (= turned question mark)"
+        }, {
+            "code": "&Agrave;",
+            "title": "Latin capital letter A with grave accent (= Latin capital letter A grave)"
+        }, {
+            "code": "&Aacute;",
+            "title": "Latin capital letter A with acute accent"
+        }, {
+            "code": "&Acirc;",
+            "title": "Latin capital letter A with circumflex"
+        }, {
+            "code": "&Atilde;",
+            "title": "Latin capital letter A with tilde"
+        }, {
+            "code": "&Auml;",
+            "title": "Latin capital letter A with diaeresis"
+        }, {
+            "code": "&Aring;",
+            "title": "Latin capital letter A with ring above (= Latin capital letter A ring)"
+        }, {
+            "code": "&AElig;",
+            "title": "Latin capital letter AE (= Latin capital ligature AE)"
+        }, {
+            "code": "&Ccedil;",
+            "title": "Latin capital letter C with cedilla"
+        }, {
+            "code": "&Egrave;",
+            "title": "Latin capital letter E with grave accent"
+        }, {
+            "code": "&Eacute;",
+            "title": "Latin capital letter E with acute accent"
+        }, {
+            "code": "&Ecirc;",
+            "title": "Latin capital letter E with circumflex"
+        }, {
+            "code": "&Euml;",
+            "title": "Latin capital letter E with diaeresis"
+        }, {
+            "code": "&Igrave;",
+            "title": "Latin capital letter I with grave accent"
+        }, {
+            "code": "&Iacute;",
+            "title": "Latin capital letter I with acute accent"
+        }, {
+            "code": "&Icirc;",
+            "title": "Latin capital letter I with circumflex"
+        }, {
+            "code": "&Iuml;",
+            "title": "Latin capital letter I with diaeresis"
+        }, {
+            "code": "&ETH;",
+            "title": "Latin capital letter Eth"
+        }, {
+            "code": "&Ntilde;",
+            "title": "Latin capital letter N with tilde"
+        }, {
+            "code": "&Ograve;",
+            "title": "Latin capital letter O with grave accent"
+        }, {
+            "code": "&Oacute;",
+            "title": "Latin capital letter O with acute accent"
+        }, {
+            "code": "&Ocirc;",
+            "title": "Latin capital letter O with circumflex"
+        }, {
+            "code": "&Otilde;",
+            "title": "Latin capital letter O with tilde"
+        }, {
+            "code": "&Ouml;",
+            "title": "Latin capital letter O with diaeresis"
+        }, {
+            "code": "&times;",
+            "title": "multiplication sign"
+        }, {
+            "code": "&Oslash;",
+            "title": "Latin capital letter O with stroke (= Latin capital letter O slash)"
+        }, {
+            "code": "&Ugrave;",
+            "title": "Latin capital letter U with grave accent"
+        }, {
+            "code": "&Uacute;",
+            "title": "Latin capital letter U with acute accent"
+        }, {
+            "code": "&Ucirc;",
+            "title": "Latin capital letter U with circumflex"
+        }, {
+            "code": "&Uuml;",
+            "title": "Latin capital letter U with diaeresis"
+        }, {
+            "code": "&Yacute;",
+            "title": "Latin capital letter Y with acute accent"
+        }, {
+            "code": "&THORN;",
+            "title": "Latin capital letter THORN"
+        }, {
+            "code": "&szlig;",
+            "title": "Latin small letter sharp s (= ess-zed); see German Eszett"
+        }, {
+            "code": "&agrave;",
+            "title": "Latin small letter a with grave accent"
+        }, {
+            "code": "&aacute;",
+            "title": "Latin small letter a with acute accent"
+        }, {
+            "code": "&acirc;",
+            "title": "Latin small letter a with circumflex"
+        }, {
+            "code": "&atilde;",
+            "title": "Latin small letter a with tilde"
+        }, {
+            "code": "&auml;",
+            "title": "Latin small letter a with diaeresis"
+        }, {
+            "code": "&aring;",
+            "title": "Latin small letter a with ring above"
+        }, {
+            "code": "&aelig;",
+            "title": "Latin small letter ae (= Latin small ligature ae)"
+        }, {
+            "code": "&ccedil;",
+            "title": "Latin small letter c with cedilla"
+        }, {
+            "code": "&egrave;",
+            "title": "Latin small letter e with grave accent"
+        }, {
+            "code": "&eacute;",
+            "title": "Latin small letter e with acute accent"
+        }, {
+            "code": "&ecirc;",
+            "title": "Latin small letter e with circumflex"
+        }, {
+            "code": "&euml;",
+            "title": "Latin small letter e with diaeresis"
+        }, {
+            "code": "&igrave;",
+            "title": "Latin small letter i with grave accent"
+        }, {
+            "code": "&iacute;",
+            "title": "Latin small letter i with acute accent"
+        }, {
+            "code": "&icirc;",
+            "title": "Latin small letter i with circumflex"
+        }, {
+            "code": "&iuml;",
+            "title": "Latin small letter i with diaeresis"
+        }, {
+            "code": "&eth;",
+            "title": "Latin small letter eth"
+        }, {
+            "code": "&ntilde;",
+            "title": "Latin small letter n with tilde"
+        }, {
+            "code": "&ograve;",
+            "title": "Latin small letter o with grave accent"
+        }, {
+            "code": "&oacute;",
+            "title": "Latin small letter o with acute accent"
+        }, {
+            "code": "&ocirc;",
+            "title": "Latin small letter o with circumflex"
+        }, {
+            "code": "&otilde;",
+            "title": "Latin small letter o with tilde"
+        }, {
+            "code": "&ouml;",
+            "title": "Latin small letter o with diaeresis"
+        }, {
+            "code": "&divide;",
+            "title": "division sign (= obelus)"
+        }, {
+            "code": "&oslash;",
+            "title": "Latin small letter o with stroke (= Latin small letter o slash)"
+        }, {
+            "code": "&ugrave;",
+            "title": "Latin small letter u with grave accent"
+        }, {
+            "code": "&uacute;",
+            "title": "Latin small letter u with acute accent"
+        }, {
+            "code": "&ucirc;",
+            "title": "Latin small letter u with circumflex"
+        }, {
+            "code": "&uuml;",
+            "title": "Latin small letter u with diaeresis"
+        }, {
+            "code": "&yacute;",
+            "title": "Latin small letter y with acute accent"
+        }, {
+            "code": "&thorn;",
+            "title": "Latin small letter thorn"
+        }, {
+            "code": "&yuml;",
+            "title": "Latin small letter y with diaeresis"
+        }, {
+            "code": "&OElig;",
+            "title": "Latin capital ligature oe"
+        }, {
+            "code": "&oelig;",
+            "title": "Latin small ligature oe"
+        }, {
+            "code": "&Scaron;",
+            "title": "Latin capital letter s with caron"
+        }, {
+            "code": "&scaron;",
+            "title": "Latin small letter s with caron"
+        }, {
+            "code": "&Yuml;",
+            "title": "Latin capital letter y with diaeresis"
+        }, {
+            "code": "&fnof;",
+            "title": "Latin small letter f with hook (= function = florin)"
+        }, {
+            "code": "&circ;",
+            "title": "modifier letter circumflex accent"
+        }, {
+            "code": "&tilde;",
+            "title": "small tilde"
+        }, {
+            "code": "&Alpha;",
+            "title": "Greek capital letter Alpha"
+        }, {
+            "code": "&Beta;",
+            "title": "Greek capital letter Beta"
+        }, {
+            "code": "&Gamma;",
+            "title": "Greek capital letter Gamma"
+        }, {
+            "code": "&Delta;",
+            "title": "Greek capital letter Delta"
+        }, {
+            "code": "&Epsilon;",
+            "title": "Greek capital letter Epsilon"
+        }, {
+            "code": "&Zeta;",
+            "title": "Greek capital letter Zeta"
+        }, {
+            "code": "&Eta;",
+            "title": "Greek capital letter Eta"
+        }, {
+            "code": "&Theta;",
+            "title": "Greek capital letter Theta"
+        }, {
+            "code": "&Iota;",
+            "title": "Greek capital letter Iota"
+        }, {
+            "code": "&Kappa;",
+            "title": "Greek capital letter Kappa"
+        }, {
+            "code": "&Lambda;",
+            "title": "Greek capital letter Lambda"
+        }, {
+            "code": "&Mu;",
+            "title": "Greek capital letter Mu"
+        }, {
+            "code": "&Nu;",
+            "title": "Greek capital letter Nu"
+        }, {
+            "code": "&Xi;",
+            "title": "Greek capital letter Xi"
+        }, {
+            "code": "&Omicron;",
+            "title": "Greek capital letter Omicron"
+        }, {
+            "code": "&Pi;",
+            "title": "Greek capital letter Pi"
+        }, {
+            "code": "&Rho;",
+            "title": "Greek capital letter Rho"
+        }, {
+            "code": "&Sigma;",
+            "title": "Greek capital letter Sigma"
+        }, {
+            "code": "&Tau;",
+            "title": "Greek capital letter Tau"
+        }, {
+            "code": "&Upsilon;",
+            "title": "Greek capital letter Upsilon"
+        }, {
+            "code": "&Phi;",
+            "title": "Greek capital letter Phi"
+        }, {
+            "code": "&Chi;",
+            "title": "Greek capital letter Chi"
+        }, {
+            "code": "&Psi;",
+            "title": "Greek capital letter Psi"
+        }, {
+            "code": "&Omega;",
+            "title": "Greek capital letter Omega"
+        }, {
+            "code": "&alpha;",
+            "title": "Greek small letter alpha"
+        }, {
+            "code": "&beta;",
+            "title": "Greek small letter beta"
+        }, {
+            "code": "&gamma;",
+            "title": "Greek small letter gamma"
+        }, {
+            "code": "&delta;",
+            "title": "Greek small letter delta"
+        }, {
+            "code": "&epsilon;",
+            "title": "Greek small letter epsilon"
+        }, {
+            "code": "&zeta;",
+            "title": "Greek small letter zeta"
+        }, {
+            "code": "&eta;",
+            "title": "Greek small letter eta"
+        }, {
+            "code": "&theta;",
+            "title": "Greek small letter theta"
+        }, {
+            "code": "&iota;",
+            "title": "Greek small letter iota"
+        }, {
+            "code": "&kappa;",
+            "title": "Greek small letter kappa"
+        }, {
+            "code": "&lambda;",
+            "title": "Greek small letter lambda"
+        }, {
+            "code": "&mu;",
+            "title": "Greek small letter mu"
+        }, {
+            "code": "&nu;",
+            "title": "Greek small letter nu"
+        }, {
+            "code": "&xi;",
+            "title": "Greek small letter xi"
+        }, {
+            "code": "&omicron;",
+            "title": "Greek small letter omicron"
+        }, {
+            "code": "&pi;",
+            "title": "Greek small letter pi"
+        }, {
+            "code": "&rho;",
+            "title": "Greek small letter rho"
+        }, {
+            "code": "&sigmaf;",
+            "title": "Greek small letter final sigma"
+        }, {
+            "code": "&sigma;",
+            "title": "Greek small letter sigma"
+        }, {
+            "code": "&tau;",
+            "title": "Greek small letter tau"
+        }, {
+            "code": "&upsilon;",
+            "title": "Greek small letter upsilon"
+        }, {
+            "code": "&phi;",
+            "title": "Greek small letter phi"
+        }, {
+            "code": "&chi;",
+            "title": "Greek small letter chi"
+        }, {
+            "code": "&psi;",
+            "title": "Greek small letter psi"
+        }, {
+            "code": "&omega;",
+            "title": "Greek small letter omega"
+        }, {
+            "code": "&thetasym;",
+            "title": "Greek theta symbol"
+        }, {
+            "code": "&upsih;",
+            "title": "Greek Upsilon with hook symbol"
+        }, {
+            "code": "&piv;",
+            "title": "Greek pi symbol"
+        }, {
+            "code": "&ensp;",
+            "title": "en space"
+        }, {
+            "code": "&emsp;",
+            "title": "em space"
+        }, {
+            "code": "&thinsp;",
+            "title": "thin space"
+        }, {
+            "code": "&zwnj;",
+            "title": "zero-width non-joiner"
+        }, {
+            "code": "&zwj;",
+            "title": "zero-width joiner"
+        }, {
+            "code": "&lrm;",
+            "title": "left-to-right mark"
+        }, {
+            "code": "&rlm;",
+            "title": "right-to-left mark"
+        }, {
+            "code": "&ndash;",
+            "title": "en dash"
+        }, {
+            "code": "&mdash;",
+            "title": "em dash"
+        }, {
+            "code": "&lsquo;",
+            "title": "left single quotation mark"
+        }, {
+            "code": "&rsquo;",
+            "title": "right single quotation mark"
+        }, {
+            "code": "&sbquo;",
+            "title": "single low-9 quotation mark"
+        }, {
+            "code": "&ldquo;",
+            "title": "left double quotation mark"
+        }, {
+            "code": "&rdquo;",
+            "title": "right double quotation mark"
+        }, {
+            "code": "&bdquo;",
+            "title": "double low-9 quotation mark"
+        }, {
+            "code": "&dagger;",
+            "title": "dagger, obelisk"
+        }, {
+            "code": "&Dagger;",
+            "title": "double dagger, double obelisk"
+        }, {
+            "code": "&bull;",
+            "title": "bullet (= black small circle)"
+        }, {
+            "code": "&hellip;",
+            "title": "horizontal ellipsis (= three dot leader)"
+        }, {
+            "code": "&permil;",
+            "title": "per mille sign"
+        }, {
+            "code": "&prime;",
+            "title": "prime (= minutes = feet)"
+        }, {
+            "code": "&Prime;",
+            "title": "double prime (= seconds = inches)"
+        }, {
+            "code": "&lsaquo;",
+            "title": "single left-pointing angle quotation mark"
+        }, {
+            "code": "&rsaquo;",
+            "title": "single right-pointing angle quotation mark"
+        }, {
+            "code": "&oline;",
+            "title": "overline (= spacing overscore)"
+        }, {
+            "code": "&frasl;",
+            "title": "fraction slash (= solidus)"
+        }, {
+            "code": "&euro;",
+            "title": "euro sign"
+        }, {
+            "code": "&image;",
+            "title": "black-letter capital I (= imaginary part)"
+        }, {
+            "code": "&weierp;",
+            "title": "script capital P (= power set = Weierstrass p)"
+        }, {
+            "code": "&real;",
+            "title": "black-letter capital R (= real part symbol)"
+        }, {
+            "code": "&trade;",
+            "title": "trademark symbol"
+        }, {
+            "code": "&alefsym;",
+            "title": "alef symbol (= first transfinite cardinal)"
+        }, {
+            "code": "&larr;",
+            "title": "leftwards arrow"
+        }, {
+            "code": "&uarr;",
+            "title": "upwards arrow"
+        }, {
+            "code": "&rarr;",
+            "title": "rightwards arrow"
+        }, {
+            "code": "&darr;",
+            "title": "downwards arrow"
+        }, {
+            "code": "&harr;",
+            "title": "left right arrow"
+        }, {
+            "code": "&crarr;",
+            "title": "downwards arrow with corner leftwards (= carriage return)"
+        }, {
+            "code": "&lArr;",
+            "title": "leftwards double arrow"
+        }, {
+            "code": "&uArr;",
+            "title": "upwards double arrow"
+        }, {
+            "code": "&rArr;",
+            "title": "rightwards double arrow"
+        }, {
+            "code": "&dArr;",
+            "title": "downwards double arrow"
+        }, {
+            "code": "&hArr;",
+            "title": "left right double arrow"
+        }, {
+            "code": "&forall;",
+            "title": "for all"
+        }, {
+            "code": "&part;",
+            "title": "partial differential"
+        }, {
+            "code": "&exist;",
+            "title": "there exists"
+        }, {
+            "code": "&empty;",
+            "title": "empty set (= null set = diameter)"
+        }, {
+            "code": "&nabla;",
+            "title": "nabla (= backward difference)"
+        }, {
+            "code": "&isin;",
+            "title": "element of"
+        }, {
+            "code": "&notin;",
+            "title": "not an element of"
+        }, {
+            "code": "&ni;",
+            "title": "contains as member"
+        }, {
+            "code": "&prod;",
+            "title": "n-ary product (= product sign)"
+        }, {
+            "code": "&sum;",
+            "title": "n-ary summation"
+        }, {
+            "code": "&minus;",
+            "title": "minus sign"
+        }, {
+            "code": "&lowast;",
+            "title": "asterisk operator"
+        }, {
+            "code": "&radic;",
+            "title": "square root (= radical sign)"
+        }, {
+            "code": "&prop;",
+            "title": "proportional to"
+        }, {
+            "code": "&infin;",
+            "title": "infinity"
+        }, {
+            "code": "&ang;",
+            "title": "angle"
+        }, {
+            "code": "&and;",
+            "title": "logical and (= wedge)"
+        }, {
+            "code": "&or;",
+            "title": "logical or (= vee)"
+        }, {
+            "code": "&cap;",
+            "title": "intersection (= cap)"
+        }, {
+            "code": "&cup;",
+            "title": "union (= cup)"
+        }, {
+            "code": "&int;",
+            "title": "integral"
+        }, {
+            "code": "&there4;",
+            "title": "therefore sign"
+        }, {
+            "code": "&sim;",
+            "title": "tilde operator (= varies with = similar to)"
+        }, {
+            "code": "&cong;",
+            "title": "congruent to"
+        }, {
+            "code": "&asymp;",
+            "title": "almost equal to (= asymptotic to)"
+        }, {
+            "code": "&ne;",
+            "title": "not equal to"
+        }, {
+            "code": "&equiv;",
+            "title": "identical to; sometimes used for 'equivalent to'"
+        }, {
+            "code": "&le;",
+            "title": "less-than or equal to"
+        }, {
+            "code": "&ge;",
+            "title": "greater-than or equal to"
+        }, {
+            "code": "&sub;",
+            "title": "subset of"
+        }, {
+            "code": "&sup;",
+            "title": "superset of"
+        }, {
+            "code": "&nsub;",
+            "title": "not a subset of"
+        }, {
+            "code": "&sube;",
+            "title": "subset of or equal to"
+        }, {
+            "code": "&supe;",
+            "title": "superset of or equal to"
+        }, {
+            "code": "&oplus;",
+            "title": "circled plus (= direct sum)"
+        }, {
+            "code": "&otimes;",
+            "title": "circled times (= vector product)"
+        }, {
+            "code": "&perp;",
+            "title": "up tack (= orthogonal to = perpendicular)"
+        }, {
+            "code": "&sdot;",
+            "title": "dot operator"
+        }, {
+            "code": "&lceil;",
+            "title": "left ceiling (= APL upstile)"
+        }, {
+            "code": "&rceil;",
+            "title": "right ceiling"
+        }, {
+            "code": "&lfloor;",
+            "title": "left floor (= APL downstile)"
+        }, {
+            "code": "&rfloor;",
+            "title": "right floor"
+        }, {
+            "code": "&lang;",
+            "title": "left-pointing angle bracket (= bra)"
+        }, {
+            "code": "&rang;",
+            "title": "right-pointing angle bracket (= ket)"
+        }, {
+            "code": "&loz;",
+            "title": "lozenge"
+        }, {
+            "code": "&spades;",
+            "title": "black spade suit"
+        }, {
+            "code": "&clubs;",
+            "title": "black club suit (= shamrock)"
+        }, {
+            "code": "&hearts;",
+            "title": "black heart suit (= valentine)"
+        }, {
+            "code": "&diams;",
+            "title": "black diamond suit"
+        }
     ]
 }
