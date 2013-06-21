@@ -1,0 +1,20 @@
+{
+    "name": "brackets-special-html-chars",
+    "title": "Special Html Characters",
+    "description": "The Inline editing context menu will get an additional option to bring up a menu of common Special HTML characters to insert of the cursors position (e.g. Copyright, Trademark, Non-breaking space).",
+    "homepage": "https://github.com/thaneuk/brackets-special-html-chars",
+    "version": "1.0.0",
+    "author": "Gregory Jackson (https://github.com/thaneuk/)",
+    "license": "MIT",
+    "categories": "snippets",
+    "files": [
+      "main.js",
+      "specialHTMLChars.json",
+      "style.css"
+    ],
+    "engines": {
+        "brackets": ">=0.23.0"
+    }
+}
+
+ 
