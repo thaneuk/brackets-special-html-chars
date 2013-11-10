@@ -4,6 +4,8 @@ The Inline editing context menu will get an additional option to bring up a menu
 
 A more option at the bottom of this menu brings up a dialog which has an extensive list of these characters for you to choose from.
 
+In addition 'Alt-C' will bring up the full dialog to select a character to be inserted at the cursor position.
+
 ## Link to Brackets
 https://github.com/adobe/brackets
 
