@@ -39,7 +39,7 @@ define(function (require, exports, module) {
         SpecialChars = require('text!specialHTMLChars.json'),
         specialChars = JSON.parse(SpecialChars),
         COMMAND_ID = 'specialhtmlchar.insert',
-				FULLCOMMAND_ID = 'full.specialhtmlchar.insert',
+        FULLCOMMAND_ID = 'full.specialhtmlchar.insert',
         MENU_NAME = 'Special HTML Character',
         iChars,
         iCharsLen = specialChars.quickLinks.length,
@@ -134,27 +134,30 @@ define(function (require, exports, module) {
     }
 
     function showFullListDialog() {
-        $fullSpecialCharsDialog.css({
-            'margin-left': -(622 / 2),
-            'margin-top': -(520 / 2),
-            'width': 620
-        }).show();
+        var currentDoc = DocumentManager.getCurrentDocument();
+        if (currentDoc) {
+            $fullSpecialCharsDialog.css({
+                'margin-left': -(622 / 2),
+                'margin-top': -(520 / 2),
+                'width': 620
+            }).show();
+        }
     }
 
     CommandManager.register(MENU_NAME, COMMAND_ID, showDialog);
 
     menu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);
-	  if (menu) {
-			menu.addMenuDivider();
-      menu.addMenuItem(COMMAND_ID);
-		}
+    if (menu) {
+        menu.addMenuDivider();
+        menu.addMenuItem(COMMAND_ID);
+    }
 
-	  CommandManager.register(MENU_NAME, FULLCOMMAND_ID, showFullListDialog);
-	
-	  editMenu = Menus.getMenu(Menus.AppMenuBar.EDIT_MENU);
+    CommandManager.register(MENU_NAME, FULLCOMMAND_ID, showFullListDialog);
+
+    editMenu = Menus.getMenu(Menus.AppMenuBar.EDIT_MENU);
     if (editMenu) {
-      editMenu.addMenuDivider();
-      editMenu.addMenuItem(FULLCOMMAND_ID, "Alt-C");
+        editMenu.addMenuDivider();
+        editMenu.addMenuItem(FULLCOMMAND_ID, "Alt-C");
     }
 
 });
