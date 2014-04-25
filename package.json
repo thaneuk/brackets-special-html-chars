@@ -14,5 +14,9 @@
     ],
     "engines": {
         "brackets": ">=0.23.0"
-    }
+    },
+    "keywords": [
+        "html",
+        "character encoding"
+    ],
 }
