@@ -12,10 +12,14 @@
     -moz-box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
 }
+.dark .specialHTMLChar {
+	  background-color: black;
+}
 .specialHTMLChar .quick {
     list-style: none;
     padding: 0;
     margin: 0px 0px 6px 0px;
+	  display: block;
 }
 .specialHTMLChar .full {
     list-style: none;
@@ -42,6 +46,9 @@
     padding: 0;
     cursor: default;
 }
+.dark .specialHTMLChar .quick a, .dark .specialHTMLChar .more, .dark .specialHTMLChar .full a {
+		color: white;
+}
 .specialHTMLChar .full a {
     font-size: 1.2em;
     line-height: 32px;
@@ -56,6 +63,9 @@
 }
 .specialHTMLChar li:hover, .specialHTMLChar .more:hover {
     background-color: #E0F0FA;
+}
+.dark .specialHTMLChar li:hover, .dark .specialHTMLChar .more:hover {
+    background-color: #005ecc;
 }
 .specialHTMLChar .quickChar {
     text-align: center;
@@ -72,6 +82,10 @@
     display: block;
     background: whiteSmoke;
     border-top: 1px solid #ddd;
+}
+.dark .specialHTMLChar .control {
+		background: #2c2c2c;
+    border-top: 1px solid #343434;
 }
 .specialHTMLChar .control p {
     font-size: 16px;
