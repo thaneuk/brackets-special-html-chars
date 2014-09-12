@@ -40,7 +40,7 @@ define(function (require, exports, module) {
         specialChars = JSON.parse(SpecialChars),
         COMMAND_ID = 'specialhtmlchar.insert',
         FULLCOMMAND_ID = 'full.specialhtmlchar.insert',
-        MENU_NAME = 'Special HTML Character',
+        //MENU_NAME = Strings.SPECIAL_HTML_CHARACTER,
         iChars,
         iCharsLen = specialChars.quickLinks.length,
         menu, editMenu, keyCommands,
@@ -154,7 +154,7 @@ define(function (require, exports, module) {
         menu.addMenuItem(COMMAND_ID);
     }
 
-    CommandManager.register(MENU_NAME, FULLCOMMAND_ID, showFullListDialog);
+    CommandManager.register(Strings.SPECIAL_HTML_CHARACTER, FULLCOMMAND_ID, showFullListDialog);
 
     editMenu = Menus.getMenu(Menus.AppMenuBar.EDIT_MENU);
     if (editMenu) {
