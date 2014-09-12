@@ -15,6 +15,10 @@
     "engines": {
         "brackets": ">=0.23.0"
     },
+    "i18n": [
+        "en", 
+        "it" 
+    ],
     "keywords": [
         "html",
         "character encoding"
