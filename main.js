@@ -47,9 +47,11 @@ define(function (require, exports, module) {
         $specialCharsDialog = $('<div>', { 'class': 'specialHTMLChar' }),
         $fullSpecialCharsDialog = $('<div>', { 'class': 'specialHTMLChar full' }),
         dialogDimensions;
-
+    
     ExtensionUtils.loadStyleSheet(module, 'style.css');
-
+    
+    var Strings             = require("strings");
+    
     /* Construction of popup dialog and events */
     $specialCharsDialog.append(
         function () {
@@ -67,7 +69,7 @@ define(function (require, exports, module) {
         }
     ).append(
         $('<div>', { 'class': 'divider' }),
-        $('<a>', { 'href': '#', 'class': 'more', 'text': 'more...'}).on('click', function () {
+        $('<a>', { 'href': '#', 'class': 'more', 'text': Strings.MORE}).on('click', function () {
             showFullListDialog();
             $specialCharsDialog.hide();
         })
@@ -99,9 +101,9 @@ define(function (require, exports, module) {
         }
     ).append(
         $('<div>', { 'class': 'control' }).append(
-            $('<p>', { 'text': 'Click the character you wish to insert' }),
+            $('<p>', { 'text': Strings.CLICK_THE_CHARACTER_YOU_WISH_TO_INSERT }),
             $('<input>', { 'type': 'text', 'class': 'codepreview', 'name': 'fullSpecialCharsDialogCodeDisplay', 'value': '' }),
-            $('<a>', { 'href': '#', 'class': 'btn', 'text': 'Cancel' }).on('click', function () {
+            $('<a>', { 'href': '#', 'class': 'btn', 'text': Strings.CANCEL }).on('click', function () {
                 $fullSpecialCharsDialog.hide();
             })
         )
