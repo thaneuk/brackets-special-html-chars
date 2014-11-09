@@ -40,17 +40,15 @@ define(function (require, exports, module) {
         specialChars = JSON.parse(SpecialChars),
         COMMAND_ID = 'specialhtmlchar.insert',
         FULLCOMMAND_ID = 'full.specialhtmlchar.insert',
-        //MENU_NAME = Strings.SPECIAL_HTML_CHARACTER,
         iChars,
         iCharsLen = specialChars.quickLinks.length,
         menu, editMenu, keyCommands,
         $specialCharsDialog = $('<div>', { 'class': 'specialHTMLChar' }),
         $fullSpecialCharsDialog = $('<div>', { 'class': 'specialHTMLChar full' }),
-        dialogDimensions;
+        dialogDimensions,
+        Strings = require('strings');
     
     ExtensionUtils.loadStyleSheet(module, 'style.css');
-    
-    var Strings             = require("strings");
     
     /* Construction of popup dialog and events */
     $specialCharsDialog.append(

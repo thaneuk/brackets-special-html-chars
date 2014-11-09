@@ -2,7 +2,6 @@
 /*global define */
 
 define(function (require, exports, module) {
-    
     'use strict';
     
     // Code that needs to display user strings should call require("strings") to load

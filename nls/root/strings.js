@@ -4,9 +4,8 @@
 /*global define */
 
 define({
-    "SPECIAL_HTML_CHARACTER"                      : "Special HTML Character",
-    "MORE"                                        : "more...",
-    "CLICK_THE_CHARACTER_YOU_WISH_TO_INSERT"      : "Click the character you wish to insert",
-    "CANCEL"                                      : "Cancel"
-   
+    SPECIAL_HTML_CHARACTER                      : 'Special HTML Character',
+    MORE                                        : 'more...',
+    CLICK_THE_CHARACTER_YOU_WISH_TO_INSERT      : 'Click the character you wish to insert',
+    CANCEL                                      : 'Cancel'
 });
