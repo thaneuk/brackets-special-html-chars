@@ -144,7 +144,7 @@ define(function (require, exports, module) {
         }
     }
 
-    CommandManager.register(Strings.MENU_NAME, COMMAND_ID, showDialog);
+    CommandManager.register(Strings.SPECIAL_HTML_CHARACTER, COMMAND_ID, showDialog);
 
     menu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);
     if (menu) {
