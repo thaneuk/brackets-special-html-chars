@@ -144,7 +144,7 @@ define(function (require, exports, module) {
         }
     }
 
-    CommandManager.register(MENU_NAME, COMMAND_ID, showDialog);
+    CommandManager.register(Strings.MENU_NAME, COMMAND_ID, showDialog);
 
     menu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);
     if (menu) {
@@ -157,7 +157,7 @@ define(function (require, exports, module) {
     editMenu = Menus.getMenu(Menus.AppMenuBar.EDIT_MENU);
     if (editMenu) {
         editMenu.addMenuDivider();
-        editMenu.addMenuItem(FULLCOMMAND_ID, "Alt-C");
+        editMenu.addMenuItem(FULLCOMMAND_ID, 'Alt-C');
     }
 
 });
