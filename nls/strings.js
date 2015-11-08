@@ -15,6 +15,7 @@ define(function (require, exports, module) {
         root: true,
         it: true,
         nl: true,
-        af: true
+        af: true,
+        de: true
     };
 });
