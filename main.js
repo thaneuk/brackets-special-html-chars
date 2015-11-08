@@ -73,7 +73,7 @@ define(function (require, exports, module) {
         })
     ).hide().appendTo('body').on('mouseleave', function () {
         $specialCharsDialog.hide();
-    }).find('ul').find('a').on('click', function () {
+    }).find('ul a').on('click', function () {
         var
             cCode = $(this).attr('htmlcode'),
             doc = DocumentManager.getCurrentDocument(),
@@ -105,7 +105,7 @@ define(function (require, exports, module) {
                 $fullSpecialCharsDialog.hide();
             })
         )
-    ).hide().appendTo('body').find('ul').find('a').on('click', function () {
+    ).hide().appendTo('body').find('ul a').on('click', function () {
         var
             cCode = $(this).attr('htmlcode'),
             doc = DocumentManager.getCurrentDocument(),
