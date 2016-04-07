@@ -19,7 +19,11 @@
         "en", 
         "it",
         "nl",
-        "af"
+        "af",
+        "de",
+        "ru",
+        "da",
+        "hr"
     ],
     "keywords": [
         "html",
